@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            height:200px;
+            background-color: aqua;
+            border-radius: 50%;
+            margin:50px 100px;
+            animation: trans 5s;
+            
+        }
+
+        @keyframes trans{
+            0%{
+               width:100px;
+               height:200px;
+               background-color: yellow;
+               border-radius: 50%;
+               
+            }
+            50%{
+               background-color:orange;
+               transform:rotate(45deg);
+
+            }
+            100%{
+               width:200px;
+               height: 400px;
+               background-color:red;
+               border-radius:0px;
+               transform:rotate(90deg);
+            }
+        }
+        </style>
+    
+</head>
+<body>
+    <div class="element"></div>
+</body>
+</html>
